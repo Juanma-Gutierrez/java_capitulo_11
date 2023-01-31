@@ -1,3 +1,4 @@
+
 /**
  * Ejercicio1.java
  *
@@ -15,26 +16,23 @@ import java.io.IOException;
 
 public class Ejercicio1 {
 
-  public static void main(String[] args) {
-    // Var declaration
-    int num = 500;
-    boolean isPrime;
-    try {
-      BufferedWriter bw = new BufferedWriter(new FileWriter("primos.txt"));
-      for (int i = 1; i <= num; i++) {
-        isPrime = true;
-        for (int j = 2; j <= (i / 2); j++) {
-          if (i % j == 0) {
-            isPrime = false;
-          }
-        }
-        if (isPrime) {
-          bw.write(i + ", ");
-        }
-      }
-      bw.close();
-    } catch (IOException ioe) {
-      System.out.println("No se ha podido escribir en el fichero");
-    }
-  }
+	public static void main(String[] args) {
+		// Var declaration
+		int num = 500;
+		boolean isPrime;
+		try {
+			BufferedWriter bw = new BufferedWriter(new FileWriter("primos.txt"));
+			for (int i = 1; i <= num; i++) {
+				isPrime = true;
+				for (int j = 2; j <= (i / 2); j++)
+					if (i % j == 0)
+						isPrime = false;
+				if (isPrime)
+					bw.write(i + ", ");
+			}
+			bw.close();
+		} catch (IOException ioe) {
+			System.out.println("No se ha podido escribir en el fichero");
+		}
+	}
 }

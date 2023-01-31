@@ -16,20 +16,20 @@ import java.io.IOException;
 
 public class Ejercicio2 {
 
-  public static void main(String[] args) {
-    // Process
-    try {
-      BufferedReader br = new BufferedReader(new FileReader("primos.txt"));
-      String line = "";
-      while (line != null) {
-		  System.out.println(line);
-		  line = br.readLine();
-      }
-      br.close();
-    } catch (FileNotFoundException fnfe) {
-      System.out.println("Archivo no encontrado.");
-    } catch (IOException ioe) {
-      System.out.println("No se puede leer el fichero primos.txt");
-    }
-  }
+	public static void main(String[] args) {
+		// Process
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("primos.txt"));
+			String line = "";
+			while (line != null) {
+				System.out.println(line);
+				line = br.readLine();
+			}
+			br.close();
+		} catch (FileNotFoundException fnfe) {
+			System.out.println("Archivo no encontrado.");
+		} catch (IOException ioe) {
+			System.out.println("No se puede leer el fichero primos.txt");
+		}
+	}
 }

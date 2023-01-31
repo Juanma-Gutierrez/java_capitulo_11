@@ -1,0 +1,7 @@
+archivo1.txt:linea1
+archivo1.txt:linea2
+archivo1.txt:linea3
+archivo1.txt:linea4
+archivo1.txt:linea5
+archivo1.txt:linea6
+archivo1.txt:linea7
