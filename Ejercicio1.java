@@ -20,15 +20,21 @@ public class Ejercicio1 {
 		// Var declaration
 		int num = 500;
 		boolean isPrime;
+		int numPrime = 0;
 		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter("primos.txt"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("primos.dat"));
 			for (int i = 1; i <= num; i++) {
 				isPrime = true;
 				for (int j = 2; j <= (i / 2); j++)
 					if (i % j == 0)
 						isPrime = false;
-				if (isPrime)
-					bw.write(i + ", ");
+				if (isPrime) {
+					numPrime++;
+					bw.write(String.format("%3d, ",i));
+					if (numPrime % 10 == 0) {
+						bw.write("\n");
+					}
+				}
 			}
 			bw.close();
 		} catch (IOException ioe) {
