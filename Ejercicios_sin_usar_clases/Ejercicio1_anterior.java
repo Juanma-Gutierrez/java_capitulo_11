@@ -1,3 +1,4 @@
+package Ejercicios_sin_usar_clases;
 
 /**
  * Ejercicio1.java

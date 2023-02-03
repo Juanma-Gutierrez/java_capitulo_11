@@ -16,7 +16,7 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		// Process
-		Prime prime = new Prime("primos.dat");
+		Prime prime = new Prime("files/primos.dat");
 		System.out.println(prime);
 	}
 }

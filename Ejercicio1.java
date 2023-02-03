@@ -30,7 +30,7 @@ public class Ejercicio1 {
 
 		// Output data
 		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter("primos.dat"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("files/primos.dat"));
 			bw.write(String.format("%s", primeNumbers));
 			bw.close();
 		} catch (Exception e) {

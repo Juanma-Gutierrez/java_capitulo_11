@@ -1,0 +1,10 @@
+perro
+gato
+hombre
+coche
+mujer
+niño
+100
+20
+010
+casa

@@ -20,7 +20,7 @@ public class Ejercicio3 {
 		try {
 			String file1 = args[0];
 			String file2 = args[1];
-			final String FILE3 = "SalidaEjercicio3.txt";
+			final String FILE3 = "files/SalidaEjercicio3.txt";
 
 			Mixer mixture = new Mixer(file1, file2, FILE3);
 			System.out.println("Se ha generado correctamente el fichero: " +mixture.getNameFile3());

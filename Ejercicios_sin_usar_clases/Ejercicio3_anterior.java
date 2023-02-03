@@ -1,3 +1,4 @@
+package Ejercicios_sin_usar_clases;
 /**
  * Ejercicio3.java
  *
@@ -28,7 +29,7 @@ public class Ejercicio3_anterior {
 			try {
 				BufferedReader br1 = new BufferedReader(new FileReader(file1));
 				BufferedReader br2 = new BufferedReader(new FileReader(file2));
-				BufferedWriter bw = new BufferedWriter(new FileWriter("SalidaEjercicio3.txt"));
+				BufferedWriter bw = new BufferedWriter(new FileWriter("files/SalidaEjercicio3.txt"));
 				String line1 = "";
 				String line2 = "";
 				while ((line1 != null) || (line2 != null)) {
