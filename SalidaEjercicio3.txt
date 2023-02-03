@@ -1,4 +1,4 @@
-archivo1.txt:linea1
+nullarchivo1.txt:linea1
                     archivo2.txt:linea1
 archivo1.txt:linea2
                     archivo2.txt:linea2

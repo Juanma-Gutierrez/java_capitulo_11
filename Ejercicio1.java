@@ -1,44 +1,40 @@
-
 /**
  * Ejercicio1.java
  *
- * @version: 31/01/2023
+ * @version: 03/02/2023
  * @author: Juan Manuel Gutiérrez
  *          https://github.com/Juanma-Gutierrez
  */
+
 /*
  * Escribe un programa que guarde en un fichero con nombre primos.dat los
-números primos que hay entre 1 y 500.
+ * números primos que hay entre 1 y 500.
+ * (Añado modificación para que lea entre dos números MIN y MAX).
  */
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException;
+import classes.Prime;
 
 public class Ejercicio1 {
-
 	public static void main(String[] args) {
-		// Var declaration
-		int num = 500;
-		boolean isPrime;
-		int numPrime = 0;
+		// Var declarations
+		Prime primeNumbers = new Prime();
+		final int MIN = 1;
+		final int MAX = 500;
+
+		// Process
+		for (int i = MIN; i <= MAX; i++) {
+			if (Prime.isPrime(i))
+				primeNumbers.addPrime(i);
+		}
+
+		// Output data
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter("primos.dat"));
-			for (int i = 1; i <= num; i++) {
-				isPrime = true;
-				for (int j = 2; j <= (i / 2); j++)
-					if (i % j == 0)
-						isPrime = false;
-				if (isPrime) {
-					numPrime++;
-					bw.write(String.format("%3d, ",i));
-					if (numPrime % 10 == 0) {
-						bw.write("\n");
-					}
-				}
-			}
+			bw.write(String.format("%s", primeNumbers));
 			bw.close();
-		} catch (IOException ioe) {
-			System.out.println("No se ha podido escribir en el fichero");
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
 	}
 }
