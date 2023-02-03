@@ -68,6 +68,33 @@ Se ha generado correctamente el fichero: SalidaEjercicio3.txt
 
 Realiza un programa que sea capaz de ordenar alfabéticamente las palabras contenidas en un fichero de texto. El nombre del fichero que contiene las palabras se debe pasar como argumento en la línea de comandos. El nombre del fichero resultado debe ser el mismo que el original añadiendo la coletilla sort, por ejemplo palabras_sort.txt. Suponemos que cada palabra ocupa una línea.
 
+```
+Ejemplo:
+palabras.txt
+perro
+gato
+hombre
+coche
+mujer
+niño
+100
+20
+010
+casa
+
+palabras_sort.txt
+010
+100
+20
+casa
+coche
+gato
+hombre
+mujer
+niño
+perro
+```
+
 ### Ejercicio 5
 
 Escribe un programa capaz de quitar los comentarios de un programa de Java.
